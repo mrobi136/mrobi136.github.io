@@ -1,12 +1,23 @@
 <html>
   <head>
    <title>Music Chart</title> 
+    <script src="https//cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body>
     <center>
-    <h1>Open the console</h1>
+    <h1>My Favorite HOME Songs</h1>
+      <div id="plot"></div>
     <script>
       console.log("This is from the internal JS");
+      let songNames = ["Resonance", "Before The Night", "Twisted Light"];
+      let streams = [127340484, 3153768, 2300587]
+      let trace = {
+        x: songNames,
+        y:streams,
+        type: 'bar'
+      };
+     let data = [trace]; 
+      Plotly.newPlot("plot", data);
     </script>
 <a href="index.html">Click Here to go back to the home page</a>
     </center>
