@@ -8,5 +8,5 @@ console.log(output);
 
  alert(output);
 
- document.getElementId("output").innerHTML = "You entered: " + output;
+ document.getElementById("output").innerHTML = "You entered: " + output;
 }
