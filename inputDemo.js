@@ -7,4 +7,6 @@ function outputDemo()
 console.log(output);
 
  alert(output);
+
+ document.getElementId("output").innerHTML = "You entered: " + output;
 }
