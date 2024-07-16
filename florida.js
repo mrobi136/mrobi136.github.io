@@ -4,8 +4,14 @@ let map = L.map("map", {
   zoom:15
 });
 
-var map = L.map('map').setView([51.505, -0.09], 13);
-
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    max/zoom:19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
+
+// everglades: coordinates: 25.2866° N, 80.8987° W-->25.2866, -80.8987/
+l.circle([25.2866, -80.8987], {
+  fillcolor: 'blue',
+  color: 'black',
+  radius: 1000
+}).addto(map);
