@@ -10,7 +10,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // everglades: coordinates: 25.2866° N, 80.8987° W-->25.2866, -80.8987/
-l.circle([25.2866, -80.8987], {
+L.circle([25.2866, -80.8987], {
   fillcolor: 'blue',
   color: 'black',
   radius: 1000
