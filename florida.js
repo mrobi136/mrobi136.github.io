@@ -14,4 +14,4 @@ L.circle([25.2866, -80.8987], {
   fillcolor: 'blue',
   color: 'black',
   radius: 1000
-}).addto(map);
+}).addTo(map);
